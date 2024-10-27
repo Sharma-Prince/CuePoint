@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -13,7 +14,7 @@ android {
 
     defaultConfig {
         applicationId = "com.adishakti.cuepoint"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -43,13 +44,20 @@ android {
 }
 
 dependencies {
+    implementation(libs.coil.compose)
+    implementation(libs.androidx.compose.material3.windowSizeClass)
+
     implementation(libs.kotlinx.serialization.json)
-    
+
     implementation(libs.navigation.compose)
+    implementation(libs.androidx.core.splashscreen )
 
     //Hilt
     implementation(libs.hilt.android)
     implementation(libs.hilt.navigation.compose)
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.play.services.auth)
     ksp(libs.hilt.compiler)
 
     implementation(libs.androidx.core.ktx)

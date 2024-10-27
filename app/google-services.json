@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "463490367528",
+    "project_id": "cuepoint-2c0b5",
+    "storage_bucket": "cuepoint-2c0b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463490367528:android:caf87024594c644a30b51d",
+        "android_client_info": {
+          "package_name": "com.adishakti.cuepoint"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzJpByvMAtJhzrOMwAorBhP7l6-ktWsK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
